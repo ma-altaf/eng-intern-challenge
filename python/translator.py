@@ -105,7 +105,7 @@ def englishFromBraille(s):
             i+=6
             subString += "."
             
-            while i+6 < len(s) and s[i:i+6] in BRAILLE_TO_NUMBER:
+            while i+6 <= len(s) and s[i:i+6] in BRAILLE_TO_NUMBER:
                 subString += BRAILLE_TO_NUMBER[s[i:i+6]]
                 i+=6
             
